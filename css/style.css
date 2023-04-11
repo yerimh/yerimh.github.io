@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5rem;
+}
+
+/* Utility Classes */
+
+.container {
+    max-width: 80%;
+    padding: 0 80px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+h3 {
+    padding: 1rem;
+}
+
+.primary-color {
+    color: #df7857;
+}
+
+.secondary-color {
+    color: #e79d88 ;
+}
+
+.primary-text {
+    color: #191919;
+}
+
+.margin {
+    margin-left: 3.5rem;
+}
+
+.btn {
+    font-size: 18px;
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0.5 0rem;
+    background: #ffffff;
+    color: #ede9d5;
+    border-radius: 5px;
+    border: none;
+}
+
+/* .btn-2 {
+    font-size: 18px;
+    display: inline-block;
+    padding: 0.3rem 0.5rem;
+    margin: 0.5rem;
+    border: rgb(255, 255, 255) solid;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+} */
+
+/* Navbar */
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    background: #ffffff;
+    z-index: 5;
+}
+    
+#navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    
+#navbar .container .logo a {
+    color:#df7857;
+}
+    
+#navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+    
+#navbar .menu li a {
+    font-size: 16px;
+    font-weight: 100;
+    padding: 0.45rem;
+    margin: 0 0.25rem;
+    color: #7a7979;
+}
+    
+#navbar .menu li a:hover {
+    color: #e79d88;
+}
+
+/* ??????????????????????????????? */
+#navbar .page-title {
+    font-size: 22px;
+}
+
+/* Home */
+
+#home {
+    display: flex;
+    background: url("../pics/header_picture.jpg") no-repeat center;
+    height: 100vh;
+    min-height: 500px;
+    padding-top: 56px; /* navbar height */
+}
+
+#home .container {
+    margin: auto 0px auto 2rem;
+}
+    
+#home .home-content .text-1 {
+    font-size: 29px;
+    margin: 1.2rem;
+}
+    
+#home .home-content .text-2 {
+    font-size: 65px;
+    font-weight: 500;
+    margin: 1rem;
+}
+    
+#home .home-content .text-3 {
+    font-size: 32px;
+    margin: 1.2rem;
+}
+    
+#home .home-content .text-3 span {
+    color: #e79d88;
+    font-weight: 600;
+}
+
+/* Header */
+
+#header {
+    display: flex;
+    background: url("../pics/header_picture.jpg") no-repeat center;
+    height: 33vh;
+    padding-top: 56px; /* navbar height */
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+#header h1 {
+    font-size: 48px;
+    margin: 1rem;
+    color: #ffffff;
+}
+
+/* Works */
+    
+.description {
+    text-align: center;
+    padding: 30px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem;
+}
+
+.projects > a {
+    flex: 50%;
+}
+    
+.project {
+    flex: 1;
+    padding: 1.5rem;
+}
+    
+.img-container img{
+    max-width: 450px;
+}
+    
+.project-content{
+    max-width: 450px;
+}
+    
+.stack-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .2rem;
+    margin-right: 1rem;
+}
+
+.stack-container li {
+    list-style: none;
+}
+
+.stack-container li a { 
+    color: #000000;
+    font-weight: 600;
+}
+    
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* About */
+
+#about p {
+    padding: .5rem;
+    margin-bottom: 0.5rem;
+}
+
+#about .btn {
+    margin-left: .5rem;
+}
+    
+.about-content {
+    display: flex;
+}
+    
+/* .about-content .column {
+    flex: 1;
+    padding: 1rem;
+} */
+
+#me {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.pro-languages {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+    
+.pro-languages .language {
+    flex: 1;
+    text-align: center;
+    padding: 1rem ;
+    margin: 1.32rem;
+} 
+    
+.pro-languages .language i {
+    background: #ffffff;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+    margin-top: -1rem;
+}
+
+.pro-languages .language h3 {
+    margin-bottom: 2rem;
+}
+
+/* work details */
+
+#work {
+    text-align: center;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.details img {
+    width: 100%;
+    padding: 30px;
+}
+
+.detail {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 50%;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+}
+
+.detail img {
+    width: 100%;
+    position: relative;
+}
+
+.caption {
+    margin: 20px;
+}
+
+/* footer */
+
+footer {
+    background: #ffffff;
+    padding: 40px 23px;
+    color: #191919;
+    text-align: center;
+}
